@@ -1,4 +1,5 @@
 # REST_API_för_CV-hantering
 
 ## ER-Diagram
-![ER-Diagram](https://github.com/user-attachments/assets/280197a4-10b1-4ceb-b7b5-86eac8cf70ab)
+
+![ER-Diagram](https://github.com/user-attachments/assets/53c3d164-59fb-435d-a956-d7789c65f6d1)
