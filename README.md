@@ -2,4 +2,6 @@
 
 ## ER-Diagram
 
-![ER-Diagram](https://github.com/user-attachments/assets/53c3d164-59fb-435d-a956-d7789c65f6d1)
+
+
+![ER-Diagram](https://github.com/user-attachments/assets/11039cc9-cfae-4466-9041-e1eb49d6cd6d)
