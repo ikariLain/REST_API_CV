@@ -1,0 +1,6 @@
+@REST_API_för_CV_hantering_HostAddress = http://localhost:5011
+
+GET {{REST_API_för_CV_hantering_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
