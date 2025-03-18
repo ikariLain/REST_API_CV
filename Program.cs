@@ -1,4 +1,6 @@
-
+using REST_API_för_CV_hantering.Data;
+using REST_API_för_CV_hantering.Endpoints;
+using Microsoft.EntityFrameworkCore;
 
 namespace REST_API_för_CV_hantering
 {
@@ -25,9 +27,9 @@ namespace REST_API_för_CV_hantering
             }
 
             app.UseHttpsRedirection();
-
             app.UseAuthorization();
 
+            GithubEndpoints.RegisterEndpoints(app);
 
             app.Run();
         }
