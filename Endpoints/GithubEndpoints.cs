@@ -19,7 +19,8 @@ namespace REST_API_för_CV_hantering.Endpoints
                 try
                 {
                     var requestMessage = new HttpRequestMessage(HttpMethod.Get, $"https://api.github.com/users/{username}/repos");
-                    requestMessage.Headers.UserAgent.ParseAdd("REST_API_för_CV_hantering");
+
+                    requestMessage.Headers.UserAgent.ParseAdd("Cv-Labb/1.0");
 
                     var response = await httpClient.SendAsync(requestMessage);
 
