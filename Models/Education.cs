@@ -20,11 +20,11 @@ namespace REST_API_för_CV_hantering.Models
 
 
         [DataType(DataType.Date)]
-        public string StartDate { get; set; }
+        public DateOnly StartDate { get; set; }
 
 
         [DataType(DataType.Date)]
-        public string EndDate { get; set; }
+        public DateOnly? EndDate { get; set; }
 
 
         [ForeignKey("Person")]

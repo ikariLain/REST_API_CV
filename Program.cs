@@ -29,6 +29,7 @@ namespace REST_API_för_CV_hantering
             app.UseHttpsRedirection();
             app.UseAuthorization();
 
+
             GithubEndpoints.RegisterEndpoints(app);
 
             app.Run();

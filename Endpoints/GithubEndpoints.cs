@@ -46,8 +46,8 @@ namespace REST_API_för_CV_hantering.Endpoints
                     }).ToList();
 
                     return Results.Ok(repoDtos);
-                }
 
+                }
                 // Catch exceptions
                 catch (JsonException)
                 {

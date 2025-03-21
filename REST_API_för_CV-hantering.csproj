@@ -4,7 +4,6 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>REST_API_för_CV_hantering</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,11 +19,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="DTOs\EducationDTOs\" />
-    <Folder Include="DTOs\ExperienceDTOs\" />
   </ItemGroup>
 
 </Project>
