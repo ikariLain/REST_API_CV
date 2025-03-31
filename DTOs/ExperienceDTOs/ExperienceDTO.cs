@@ -1,13 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace REST_API_för_CV_hantering.DTOs.ExperienceDTO
+namespace REST_API_för_CV_hantering.DTOs.ExperienceDTOs
 {
-    public class PersonCreateDTO
+    public class ExperienceDTO
     {
         public string Company { get; set; }
         public string JobTitle { get; set; }
-        public string Decription { get; set; }
-        public int StartDate { get; set; }
-        public int? EndDate { get; set; }
+        public string Description { get; set; }
+        public DateOnly StartDate { get; set; }
+        public DateOnly? EndDate { get; set; }
     }
 }

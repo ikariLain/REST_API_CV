@@ -2,7 +2,7 @@
 
 namespace REST_API_för_CV_hantering.DTOs.ExperienceDTOs
 {
-    public class ExperienceCreateDTO
+    public class ExperiencePutDTO
     {
         [Required(ErrorMessage = "Person Id is required.")]
         public int PersonId { get; set; }
