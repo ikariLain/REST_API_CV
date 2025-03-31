@@ -25,5 +25,8 @@ namespace REST_API_för_CV_hantering.DTOs.EducationDTOs
         [DataType(DataType.Date, ErrorMessage = "Need a valid date.")]
         public DateOnly EndDate { get; set; }
 
+        [Required(ErrorMessage = "Person ID is required.")]
+        public int PersonId { get; set; }
+
     }
 }
