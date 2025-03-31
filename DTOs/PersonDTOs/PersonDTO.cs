@@ -2,11 +2,10 @@
 {
     public class PersonDTO
     {
-        public string Name { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public string Email { get; set; }
         public string MobileNumber { get; set; }
-        public string Decription { get; set; }
-
-
+        public string Description { get; set; }
     }
 }

@@ -5,7 +5,10 @@ namespace REST_API_för_CV_hantering.DTOs.PersonDTOs
     public class PersonCreateDTO
     {
         [Required, StringLength(50, MinimumLength =5)]
-        public string Name { get; set; }
+        public string FirstName { get; set; }
+
+        [Required, StringLength(50, MinimumLength = 5)]
+        public string LastName { get; set; }
 
         [Required, EmailAddress, StringLength(50, MinimumLength =5)]
         public string Email { get; set; }
