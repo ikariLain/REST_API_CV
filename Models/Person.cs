@@ -27,10 +27,12 @@ namespace REST_API_för_CV_hantering.Models
         [StringLength(25)]
         public string MobileNumber { get; set; }
 
-        
-        List<Education> Educations { get; set; }
+        public string Description { get; set; }
 
-        List<Experience> Experiences { get; set; }
+
+        public List<Education> Educations { get; set; }
+
+         public List<Experience> Experiences { get; set; }
 
 
 

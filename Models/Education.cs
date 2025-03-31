@@ -10,12 +10,12 @@ namespace REST_API_för_CV_hantering.Models
 
 
         [Required]
-        [StringLength(25)]
+        [StringLength(50)]
         public string School { get; set; }
 
 
         [Required]
-        [StringLength(25)]
+        [StringLength(50)]
         public string Degree { get; set; }
 
 

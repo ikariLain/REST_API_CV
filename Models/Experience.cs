@@ -10,20 +10,24 @@ namespace REST_API_för_CV_hantering.Models
 
 
         [Required]
-        [StringLength(25)]
+        [StringLength(50)]
         public string Company { get; set; }
+
         [Required]
         [StringLength(25)]
-        public string Title { get; set; }
+        public string JobTitle { get; set; }
+
+        [StringLength(300)]
+        public string Description { get; set; }
 
 
         [DataType(DataType.Date)]
-        public string StartDate { get; set; }
+        public DateOnly StartDate { get; set; }
 
 
 
         [DataType(DataType.Date)]
-        public string EndDate { get; set; }
+        public DateOnly? EndDate { get; set; }
 
 
         [ForeignKey("Person")]
