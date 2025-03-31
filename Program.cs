@@ -17,6 +17,11 @@ namespace REST_API_för_CV_hantering
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddDbContext<CVContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -31,6 +36,9 @@ namespace REST_API_för_CV_hantering
 
 
             GithubEndpoints.RegisterEndpoints(app);
+            EducationEndpoints.RegisterEndpoints(app);
+            ExperienceEndpoints.RegisterEndpoints(app); 
+            PersonEndpoints.RegisterEndpoints(app);
 
             app.Run();
         }
