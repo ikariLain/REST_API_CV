@@ -5,6 +5,7 @@ namespace REST_API_för_CV_hantering.DTOs.PersonDTOs
 {
     public class PersonListDTO
     {
+        public int PersonId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }

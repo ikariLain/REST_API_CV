@@ -4,6 +4,7 @@ namespace REST_API_för_CV_hantering.DTOs.ExperienceDTOs
 {
     public class ExperienceDTO
     {
+        public int PersonId_FK { get; set; }
         public string Company { get; set; }
         public string JobTitle { get; set; }
         public string Description { get; set; }

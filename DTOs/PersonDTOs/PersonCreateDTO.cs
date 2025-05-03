@@ -4,6 +4,9 @@ namespace REST_API_för_CV_hantering.DTOs.PersonDTOs
 {
     public class PersonCreateDTO
     {
+        [Required(ErrorMessage = "Person Id is required.")]
+        public int PersonId { get; set; }
+
         [Required (ErrorMessage = "Missing Firstname, its required"), StringLength(50, MinimumLength =5)]
         public string FirstName { get; set; }
 

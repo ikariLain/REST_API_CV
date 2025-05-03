@@ -28,15 +28,19 @@ namespace REST_API_för_CV_hantering.Endpoints
                         Email = p.Email,
                         MobileNumber = p.MobileNumber,
                         Description = p.Description,
+                        PersonId = p.PersonId,
                         Educations = p.Educations.Select(e => new EducationDTO
                         {
+                            PersonId_FK = e.PersonId_FK,
                             School = e.School,
                             Degree = e.Degree,
                             StartDate = e.StartDate,
                             EndDate = e.EndDate
+                           
                         }).ToList(),
                         Experiences = p.Experiences.Select(e => new ExperienceDTO
                         {
+                            PersonId_FK = e.PersonId_FK,
                             Company = e.Company,
                             JobTitle = e.JobTitle,
                             Description = e.Description,
