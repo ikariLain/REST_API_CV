@@ -20,6 +20,7 @@ namespace REST_API_för_CV_hantering.DTOs.EducationDTOs
         public DateOnly? EndDate { get; set; }
 
         [Required(ErrorMessage = "Person ID is required.")]
-        public int PersonId { get; set; }
+        /// Foreign key
+        public int PersonId_FK { get; set; }
     }
 }

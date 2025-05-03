@@ -10,7 +10,6 @@ namespace REST_API_för_CV_hantering.DTOs.EducationDTOs
         [StringLength(50, ErrorMessage = "Degree cannot exceed 50 characters.")]
         public string? Degree { get; set; }
 
-
         [DataType(DataType.Date, ErrorMessage = "Start date must be a valid date.")]
         public DateOnly? StartDate { get; set; }
 

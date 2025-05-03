@@ -2,6 +2,7 @@
 {
     public class EducationDTO
     {
+        public int PersonId_FK { get; set; }
         public string School { get; set; }
         public string Degree { get; set; }
         public DateOnly StartDate { get; set; }
