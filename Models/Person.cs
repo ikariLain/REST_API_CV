@@ -24,10 +24,7 @@ namespace REST_API_för_CV_hantering.Models
 
         // Education and Experience are collections of the respective models
         public List<Education> Educations { get; set; }
-
         public List<Experience> Experiences { get; set; }
-
-
 
     }
 }
