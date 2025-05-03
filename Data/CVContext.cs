@@ -5,20 +5,16 @@ namespace REST_API_för_CV_hantering.Data
 {
     public class CVContext : DbContext
     {
-        public CVContext(DbContextOptions<CVContext> options) : base(options)
-        {
-            
-        }
+        // Constructor that takes DbContextOptions and passes it to the base class
+        public CVContext(DbContextOptions<CVContext> options) : base(options){ }
 
         // This is the table that will be created in the database
-
         public DbSet<Person> Persons { get; set; }
-
         public DbSet<Experience> Experiences { get; set; }
-
         public DbSet<Education> Educations { get; set; }
 
-        //Test data for the database
+
+        //For seeding data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
